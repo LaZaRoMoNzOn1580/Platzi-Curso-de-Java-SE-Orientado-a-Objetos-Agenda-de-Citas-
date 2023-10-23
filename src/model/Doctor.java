@@ -8,7 +8,7 @@ import java.util.SimpleTimeZone;
 
 public class Doctor extends User {
     private String speciality;
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
     public Doctor(String Name, String email){
         super(Name,email);
@@ -68,11 +68,11 @@ public class Doctor extends User {
             this.id_availableAppointment = id_availableAppointment;
         }
 
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
 
-        public String getDate(String DATE) {
+        public String getDate() {
             return format.format(date);
         }
 

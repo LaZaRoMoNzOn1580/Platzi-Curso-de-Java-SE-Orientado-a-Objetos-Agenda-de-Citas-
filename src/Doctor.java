@@ -4,8 +4,9 @@ public class Doctor {
     String name;
     String speciality;
 
-    Doctor(String Name){
+    Doctor(String Name, String Speciality){
         this.name = Name;
+        this.speciality = Speciality;
         id++;
     }
 

@@ -21,10 +21,15 @@ public class Main {
         }
         */
 
+
+
         System.out.println(docLarry.toString());
 
         Patient paciente = new Patient("Lazaro","feo@gmail.com");
         System.out.println(paciente.toString());
+
+        docLarry.showDataUser();
+        paciente.showDataUser();
 
     }
 

@@ -1,4 +1,5 @@
-import java.sql.Time;
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -6,7 +7,7 @@ public class Doctor extends User {
     private String speciality;
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
-    Doctor(String Name, String email){
+    public Doctor(String Name, String email){
         super(Name,email);
         this.speciality = speciality;
     }

@@ -36,7 +36,6 @@ public class UIMenu {
                 case 2:
                     response = 0;
                     authUser(2);
-
                     break;
                 case 0:
                     System.out.println("Thank you for you visit");
@@ -84,7 +83,7 @@ public class UIMenu {
                         emailCorrect = true;
                         //Obtener el usuario logueado
                         patientLogged = pat;
-                        //ShowPatientMenu
+                        UIPatientMenu.showPatientMeu();
                     }
                 }
 
@@ -119,6 +118,7 @@ public class UIMenu {
                     showMenu();
                     break;
             }
+
         }while (response != 0);
     }
 }

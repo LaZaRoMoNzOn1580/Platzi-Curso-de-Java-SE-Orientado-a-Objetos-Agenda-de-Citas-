@@ -28,7 +28,7 @@ public class UIPatientMenu {
                     showBookAppointmentMenu();
                     break;
                 case 2:
-
+                    showPatientMyAppointments();
                     break;
                 case 0:
                     UIMenu.showMenu();
@@ -107,6 +107,7 @@ public class UIPatientMenu {
             }
 
             System.out.println("0. Return");
+
         }while (response != 0);
     }
 }

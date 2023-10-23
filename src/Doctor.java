@@ -1,3 +1,4 @@
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -26,6 +27,11 @@ public class Doctor extends User {
 
     public ArrayList<AvailableAppointment> getAvailableAppointments() {
         return availableAppointments;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nSpeciality: " + speciality + "\nAvailable " + availableAppointments.toString();
     }
 
     public static class AvailableAppointment {
@@ -60,6 +66,11 @@ public class Doctor extends User {
 
         public void setTime(String time) {
             this.time = time;
+        }
+
+        @Override
+        public String toString() {
+            return "Available Appointment \nDate: " + date + "\nTime: " + time;
         }
     }
 

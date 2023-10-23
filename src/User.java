@@ -55,4 +55,9 @@ public class User {
             System.out.println("El numero de telefono debe tener 9 digitos");
         }
     }
+
+    @Override
+    public String toString() {
+        return "User: " + name + ", Email: " + email + "\nAddress: " + address + " .Phone: " + phoneNumber;
+    }
 }

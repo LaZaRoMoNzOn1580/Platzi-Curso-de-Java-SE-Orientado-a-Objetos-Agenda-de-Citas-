@@ -21,7 +21,7 @@ public class Patient extends User {
         this.height = height;
     }
     public String getHeight() {
-        return this.height + " M.";
+        return this.height + " Mts.";
     }
 
     public int getId() {
@@ -48,4 +48,8 @@ public class Patient extends User {
         this.blood = blood;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\nAge: " + birthday + "\nWeight: " + getWeight() + "\nHeight: " + getHeight() + "\nBlood: " + blood;
+    }
 }

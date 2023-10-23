@@ -10,7 +10,7 @@ public class UIDoctorMenu {
 
     public static ArrayList<Doctor> doctorsAvailableAppointment = new ArrayList<>();
 
-    public static void showDoctorMenu(){
+    public static void showDoctorMenu() throws ParseException {
         int response = 0;
         do{
             System.out.println("\n\n");
@@ -25,6 +25,7 @@ public class UIDoctorMenu {
 
             switch (response){
                 case 1:
+                    showAddAvailableAppointmentsMenu();
                     break;
                 case 2:
                     break;
@@ -53,9 +54,8 @@ public class UIDoctorMenu {
             response = Integer.valueOf(sc.nextLine());
 
             if(response > 0 && response < 4){
-                //1,2,3
                 int monthSelectd = response;
-                System.out.println(monthSelectd + " . " + UIMenu.MONTHS[monthSelectd]);
+                System.out.println(monthSelectd + " . " + UIMenu.MONTHS[monthSelectd - 1]);
 
                 System.out.println("Insert the date available [dd/mm/yyyy]");
                 String date = sc.nextLine();
